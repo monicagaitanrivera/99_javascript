@@ -1,0 +1,23 @@
+body {
+    background-image: url(https://www.androidsis.com/wp-content/uploads/2009/06/fondos-de-pantalla-de-paisajes-22.jpg);
+}
+input{
+    margin-left:390px;
+    margin-top: 90px;
+	background: #D1F2EB;
+	width: 36%;
+	padding: 25px;
+	border-radius: 12px;
+	color: #2C3E50;
+	font-size: 18px;
+}
+
+.boton1{
+    margin-top: 40px;
+	background: #87e9d4;
+	width: 120px;
+	height: 40px;
+    margin-left: 590px;
+    border-radius: 10px;
+    color: #2C3E50;
+}

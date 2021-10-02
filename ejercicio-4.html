@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/ejercicio-2.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+</head>
+<body>
+   <h1>Menu Javascript</h1>
+   <label class="icono-menu" onclick="mostrarMenu()"><a href="#"><i class="fas fa-bars"></i></a></label>
+   <nav id="menu-principal">
+      <ul class="menu">
+       <li><a href="calculadora.html">Inicio</a></li>
+       <li><a href="ejercicio-1.html">ejercicio-1</a></li>
+       <li><a href="ejercicio-2.html">ejercicio-2</a></li>
+       <li><a href="ejercicio-3.html">ejercicio-3</a></li>
+       <li><a href="ejercicio-4.html">ejercicio-4</a></li>
+       <li><a href="ejer-1.html">ejercicio-4</a></li>
+       <li><a href="ejer-2.html">ejercicio-4</a></li>
+       <li><a href="ejer-3.html">ejercicio-4</a></li>
+       <li><a href="ejer-4.html">ejercicio-4</a></li>
+   </ul>
+      </nav>
+      <div class="main-content">
+    <section>
+    <form action="#" method="POST">
+        ingrese  un numero: <input type="number" id="g1" class="cajas"> <br>
+        ingrese  un numero: <input type="number" id="g2" class="cajas"> <br>
+        ingrese  un numero: <input type="number" id="g3" class="cajas"> <br>
+           <button type="button" onclick="calcular();" class="boton1">calcular</button><br>
+           <div id="promedio"></div>
+           <div id="b1"></div>
+           <div id="b2"></div>
+           <div id="b3"></div>
+           <div id="m1"></div>
+           <div id="m2"></div>
+           <div id="m3"></div>
+           <div id="pe1"></div>
+           <div id="pe2"></div>
+           <div id="pe3"></div>
+           <div id="mo1"></div>
+           <div id="mo2"></div>
+           <div id="mo3"></div>
+          
+   </form><br>
+  
+   
+ </section>
+</body>
+</html>
+
+<script>
+    function calcular(){
+        var g1 =document.getElementById('g1').value;
+        var g2 =document.getElementById('g2').value;
+        var g3 =document.getElementById('g3').value;
+      
+       
+
+        var suma = parseInt(g1) + parseInt(g2) + parseInt(g3);
+        var promedio= suma /3;
+
+        document.getElementById('promedio').innerHTML="<h1> El promedio es= "+promedio+"</h1>";
+       
+
+     if(parseInt(g1)>parseInt(g2) && parseInt(g1)>parseInt(g3)){
+        document.getElementById('b1').innerHTML="<h1> El Mayor es= "+g1+"</h1>";
+     }
+     if(parseInt(g2)>parseInt(g1) && parseInt(g2)>parseInt(g3)){
+        document.getElementById('b2').innerHTML="<h1> El Mayor es= "+g2+"</h1>";
+     }
+     if(parseInt(g3)>parseInt(g1) && parseInt(g3)>parseInt(g2)){
+        document.getElementById('b3').innerHTML="<h1> El Mayor es= "+g3+"</h1>";
+     }
+     if(parseInt(g1)<parseInt(g2) && parseInt(g1)<parseInt(g3)){
+        document.getElementById('m1').innerHTML="<h1> El Menor es= "+g1+"</h1>";
+     }
+     if(parseInt(g2)<parseInt(g1) && parseInt(g2)<parseInt(g3)){
+        document.getElementById('m2').innerHTML="<h1> El Menor es= "+g2+"</h1>";
+     }
+     if(parseInt(g3)<parseInt(g1) && parseInt(g3)<parseInt(g2)){
+        document.getElementById('m3').innerHTML="<h1> El Menor es= "+g3+"</h1>";
+     }
+     if(parseInt(g1) %2 ==0){
+        document.getElementById('pe1').innerHTML="<h1>es par= "+g1+"</h1>";
+     }
+     if(parseInt(g2) %2 ==0){
+        document.getElementById('pe2').innerHTML="<h1>es par= "+g2+"</h1>";
+     }
+     if(parseInt(g3) %2 ==0){
+        document.getElementById('pe3').innerHTML="<h1>es par= "+g3+"</h1>";
+     }
+     if(parseInt(g1) %2 ==1){
+        document.getElementById('mo1').innerHTML="<h1>es impar= "+g1+"</h1>";
+     }
+     if(parseInt(g2) %2 ==1){
+        document.getElementById('mo2').innerHTML="<h1>es impar= "+g2+"</h1>";
+     }
+     if(parseInt(g3) %2 ==1){
+        document.getElementById('mo3').innerHTML="<h1>es impar= "+g3+"</h1>";
+     }         
+    }
+</script>
+

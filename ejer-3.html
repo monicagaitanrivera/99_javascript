@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/ejer-1.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+</head>
+<body>
+   <h1>Menu Javascript</h1>
+   <label class="icono-menu" onclick="mostrarMenu()"><a href="#"><i class="fas fa-bars"></i></a></label>
+   <nav id="menu-principal">
+      <ul class="menu">
+       <li><a href="calculadora.html">Inicio</a></li>
+       <li><a href="ejercicio-1.html">ejercicio-1</a></li>
+       <li><a href="ejercicio-2.html">ejercicio-2</a></li>
+       <li><a href="ejercicio-3.html">ejercicio-3</a></li>
+       <li><a href="ejercicio-4.html">ejercicio-4</a></li>
+       <li><a href="ejer-1.html">ejerci-1</a></li>
+       <li><a href="ejer-2.html">ejerci-2</a></li>
+       <li><a href="ejer-3.html">ejerci-3</a></li>
+       <li><a href="ejer-4.html">ejerci-4</a></li>
+   </ul>
+</nav>
+<div class="main-content">
+  <center><h1>Crear una página web que permita encontrar la sumatoria de los números pares e impares de un valor digitado</h1></center>
+   <section><form >
+    <input type="number" id="number"class="cajas" placeholder=":::::......escribe numero......:::::">
+    <br>
+    <button type="button" onclick="calcular();" class="boton1">calcular</button><br>
+    <div id="resultado"></div> 
+    <div id="resul"></div> </nav>
+
+    </form><br>
+</section>
+   
+          <script>
+            function calcular() {
+              var num=parseInt(document.getElementById("number").value);
+              var par =0;
+               var impar =0;
+           
+     
+        for (var i=1; i <=num; i++){
+
+        if(i%2==0){
+          par +=i;
+          document.getElementById("resultado").innerHTML="numero par es "+par;
+        }
+        else{
+          impar +=i;
+          document.getElementById("resul").innerHTML="el numero impar es "+impar;
+        }
+
+         }
+      
+      }
+        </script>

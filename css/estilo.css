@@ -1,0 +1,29 @@
+body{
+    margin-top: 5%; font: 80px Arial,Helvetica,sans-serif; font-size: 50px;
+    background-color: rgb(247, 199, 199);
+    /*background-repeat: no-repeat;*/
+}
+table{
+    background-color: rgb(243, 17, 17);      ; border-radius: 15px; padding: 3px;
+}
+.boton1{
+    font-size: 50px;
+    margin: center;
+    margin-left: 10px;
+    background-color:rgb(241, 115, 115) ;
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    border: 5px solid black ;
+    border: 8px outset;
+}
+input{
+    margin-top: 5%;
+    width: 400px;
+    height: 80px;
+    border: 5px solid rgb(139, 139, 139)  ;
+}
+
+button{
+    padding: 10px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 4 Notas</title>
+    <link rel="stylesheet" href="css/ejercicio-2.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Menu Javascript</h1>
+    <label class="icono-menu" onclick="mostrarMenu()"><a href="#"><i class="fas fa-bars"></i></a></label>
+    <nav id="menu-principal">
+       <ul class="menu">
+        <li><a href="calculadora.html">Inicio</a></li>
+        <li><a href="ejercicio-1.html">ejercicio-1</a></li>
+        <li><a href="ejercicio-2.html">ejercicio-2</a></li>
+        <li><a href="ejercicio-3.html">ejercicio-3</a></li>
+        <li><a href="ejercicio-4.html">ejercicio-4</a></li>
+        <li><a href="ejer-1.html">ejerci-1</a></li>
+        <li><a href="ejer-2.html">ejerci-2</a></li>
+        <li><a href="ejer-3.html">ejerci-3</a></li>
+        <li><a href="ejer-4.html">ejerci-4</a></li>
+    </ul>
+       </nav>
+       <div class="main-content">
+
+    <section>
+    <form action="#" method="POST">
+        <h1>horas trabajadas</h1>
+        digite 1 parcial: <input type="number" id="m1" class="cajas"> <br>
+        digite 2 parcial: <input type="number" id="m2" class="cajas"> <br>
+        digite 3 parcial: <input type="number" id="m3" class="cajas"> <br>
+        digite nota final:<input type="number" id="m4" class="cajas"> <br>
+          <button type="button" onclick="calcular();" class="boton1">calcular</button><br>
+  </form><br>
+</section>
+  <div id="nota"></div>
+  
+   
+    
+    
+</body>
+</html>
+<script>
+    function calcular(){
+        var m1 =document.getElementById('m1').value;
+        var m2 =document.getElementById('m2').value;
+        var m3 =document.getElementById('m3').value;
+        var m4 =document.getElementById('m4').value;
+       
+        var nop1=parseInt(m1) * 0.20;
+        var nop2=parseInt(m2) * 0.25;
+        var nop3=parseInt(m3) * 0.30;
+        var nop4=parseInt(m4) * 0.25;
+
+        var nota = (nop1 + nop2 + nop3 + nop4 );
+
+        document.getElementById('nota').innerHTML=nota;
+
+      if(nota >= 3 ){
+          document.write('Ganó la materia de programación' +nota);
+
+      }
+      if( 2.5 < nota   && nota < 3){
+          document.write('perdió la materia de programación' +nota );
+      }
+      if(nota <= 2.4){
+          document.write('Quedó en transición' +nota);
+      }
+
+            
+    }
+</script>

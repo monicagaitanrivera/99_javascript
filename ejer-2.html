@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/ejer-2.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+</head>
+<body>
+   <h1>Menu Javascript</h1>
+   <label class="icono-menu" onclick="mostrarMenu()"><a href="#"><i class="fas fa-bars"></i></a></label>
+   <nav id="menu-principal">
+      <ul class="menu">
+       <li><a href="calculadora.html">Inicio</a></li>
+       <li><a href="ejercicio-1.html">ejercicio-1</a></li>
+       <li><a href="ejercicio-2.html">ejercicio-2</a></li>
+       <li><a href="ejercicio-3.html">ejercicio-3</a></li>
+       <li><a href="ejercicio-4.html">ejercicio-4</a></li>
+       <li><a href="ejer-1.html">ejerci-1</a></li>
+       <li><a href="ejer-2.html">ejerci-2</a></li>
+       <li><a href="ejer-3.html">ejerci-3</a></li>
+       <li><a href="ejer-4.html">ejerci-4</a></li>
+   </ul>
+      </nav>
+      <div class="main-content">
+
+        <!DOCTYPE html>
+        <html lang="en">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>FOR</title>
+        </head>
+        
+        <body>
+            
+
+            <select id="numero"  onchange="saludar()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+        
+            </select>
+            <div id="resultado"></div>
+        </body>
+        
+        </html>
+        <script>
+            function saludar() {
+                var numero = parseInt(document.getElementById("numero").value);
+                var multiplicacion = "";
+                for (var i = 1; i <= 100; i++) {
+                    multiplicacion += "<h1>" + i + " * " + numero + " = " + numero * i + "</h1>";
+                }
+                document.getElementById("resultado").innerHTML = multiplicacion;
+            }
+        </script>
