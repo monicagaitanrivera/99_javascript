@@ -28,4 +28,40 @@
        <li><a href="ejer-4.html">ejerci-4</a></li>
    </ul>
       </nav>
+
+      <div class=" main-content"> 
+        <H1>Crear una página web que permita que genere la siguiente serie: 5,10,15,20,25,30... El programa preguntará  primero  cuantos términos  se  quieren  mostrar  y  después mostrará la serie correspondiente.</H1>
+  
+               
+        <section>
+           <form action="#" method="POST">
+               <input type="number" id="numero" class="cajas" placeholder="::::::.....Ingrese un numero......::::::"> <br> <br>
+               <button class="boton1" type="button" onclick="calcular();">CALCULAR</button><br>
+              
+           </form>
+       </section>
+      
+   </body>
+   </html>
+   <Script>
+       function calcular(){
+  var numero=document.getElementById('numero').value;
+  
+  
+  for(var s=0; s <= parseInt(numero);s++){
+  
+    if( s %5 == 0){
+      
+     
+   document.write( +s+"<br>")
+          
+    }
+    
+  } 
+  }
+  
+   
+       
+   </Script>
+        
       
